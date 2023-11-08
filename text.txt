@@ -1,0 +1,49 @@
+npm create vite@latest client
+
+cd client
+
+npm i
+
+npm install -D tailwindcss postcss autoprefixer
+
+npx tailwindcss init -p
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+npm i react-router-dom
+
+npm i react-icons
+
+Tạo folder API
+
+npm init -y
+
+npm i express
+
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon api/index.js"
+  },
+
+npm i nodemon
+
+
+
+
+
+
+git add .
+
+git commit -m "..."
+
+git push origin main
