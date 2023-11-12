@@ -31,7 +31,6 @@ export default function CreateListing() {
   const [loading, setLoading] = useState(false);
   const [imageUploadError, setImageUploadError] = useState(false);
   const navigate = useNavigate();
-  console.log(formData);
 
   const handleImageSubmit = () => {
     if (files.length > 0 && files.length + formData.imageUrls.length < 7) {
