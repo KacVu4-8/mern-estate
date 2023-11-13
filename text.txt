@@ -57,6 +57,6 @@ npm install -D @tailwindcss/line-clamp
 tailwind.config.js
   plugins: [
     require("@tailwindcss/line-clamp"),
-    // ...
+    // ....
   ],
 
