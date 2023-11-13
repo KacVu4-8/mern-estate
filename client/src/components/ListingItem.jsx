@@ -3,7 +3,7 @@ import { MdLocationOn } from "react-icons/md";
 
 export default function ListingItem({ listing }) {
   return (
-    <div className="bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-full sm:w-[330px]">
+    <div className="bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-full sm:w-[260px]">
       <Link to={`/listing/${listing._id}`}>
         <img
           src={
@@ -23,26 +23,26 @@ export default function ListingItem({ listing }) {
               {listing.address}
             </p>
           </div>
-          <p className="text-sm text-gray-700 line-clamp-2">
+          <p className="text-sm text-gray-600 line-clamp-2">
             {listing.description}
           </p>
-          <p className="text-slate-500 mt-2 font-semibold">
+          <p className="text-slate-500 mt-2 font-semibold ">
             $
             {listing.offer
-              ? listing.regularPrice.toLocaleString("en-US")
-              : listing.discountPrice.toLocaleString("en-US")}
-            {listing.type === "rent" && " / Month"}
+              ? listing.discountPrice.toLocaleString("en-US")
+              : listing.regularPrice.toLocaleString("en-US")}
+            {listing.type === "rent" && " / month"}
           </p>
           <div className="text-slate-700 flex gap-4">
-            <div className="font-semibold text-xs">
+            <div className="font-bold text-xs">
               {listing.bedrooms > 1
-                ? `${listing.bedrooms} Beds`
-                : `${listing.bedrooms} Bed`}
+                ? `${listing.bedrooms} Beds `
+                : `${listing.bedrooms} Bed `}
             </div>
-            <div className="font-semibold text-xs">
+            <div className="font-bold text-xs">
               {listing.bathrooms > 1
-                ? `${listing.bathrooms} Baths`
-                : `${listing.bathrooms} Bath`}
+                ? `${listing.bathrooms} Baths `
+                : `${listing.bathrooms} Bath `}
             </div>
           </div>
         </div>
